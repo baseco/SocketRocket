@@ -13,6 +13,7 @@ let package = Package(
             targets: ["SocketRocket"]
         ),
     ],
+    dependencies: [],
     targets: [
         .target(
             name: "SocketRocket",
@@ -32,6 +33,5 @@ let package = Package(
             ]
         )
     ],
-    dependencies: [],
     swiftLanguageVersions: [.v5]
 )
