@@ -18,8 +18,8 @@ let package = Package(
         .target(
             name: "SocketRocket",
             path: "SocketRocket",
-            sources: ["."],
             exclude: ["SocketRocket-Prefix.pch"],
+            sources: ["."],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("."),
