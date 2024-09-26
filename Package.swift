@@ -19,9 +19,9 @@ let package = Package(
             name: "SocketRocket",
             path: "SocketRocket",
             sources: ["SRWebSocket.m","SRWebSocket.h"],
-            publicHeadersPath: "include",
+            publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("include"),
+                .headerSearchPath("."),
                 .define("ENABLE_NS_ASSERTIONS", to: "YES"),
                 .unsafeFlags(["-Wno-format"], .when(platforms: [.macOS]))
             ],
