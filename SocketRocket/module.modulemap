@@ -1,0 +1,4 @@
+module TestPackage {
+  header "SRWebSocket.h"
+  export *
+}
