@@ -18,7 +18,7 @@ let package = Package(
         .target(
             name: "SocketRocket",
             path: "SocketRocket",
-            sources: ["SRWebSocket.m"],
+            sources: ["SRWebSocket.m","SRWebSocket.h"],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("include"),
