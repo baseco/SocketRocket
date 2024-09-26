@@ -18,11 +18,10 @@ let package = Package(
         .target(
             name: "SocketRocket",
             path: "SocketRocket",
-            exclude: ["SocketRocket-Prefix.pch"],
-            sources: ["."],
-            publicHeadersPath: ".",
+            sources: ["SRWebSocket.m"],
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("."),
+                .headerSearchPath("include"),
                 .define("ENABLE_NS_ASSERTIONS", to: "YES"),
                 .unsafeFlags(["-Wno-format"], .when(platforms: [.macOS]))
             ],
